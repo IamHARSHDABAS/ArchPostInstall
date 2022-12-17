@@ -35,8 +35,8 @@ cp Wallpaper/596610.jpg ~/Wallpaper/
 
 # Install AurHelper
 cd ~
-git clone https://aur.archlinux.org/Yay.git
-cd Yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
 cd ~
 
