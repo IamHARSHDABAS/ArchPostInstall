@@ -13,6 +13,9 @@ exec feh --bg-fill Wallpaper/596610.jpg
 # Network Manager
 exec --no-startup-id nm-applet
 
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # Adjust volume
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -132,11 +135,6 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "resize"
-
-# Bar
-bar {
-	status_command i3status
-}
 
 # Gaps
 gaps inner 15
