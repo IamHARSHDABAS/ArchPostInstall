@@ -32,7 +32,7 @@ cp DotFiles/I3/config ~/.config/i3/
 cp DotFiles/Polybar/config.ini ~/.config/polybar/
 cp DotFiles/Polybar/launch.sh ~/.config/polybar/
 sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
-cp Wallpaper/596610.jpg ~/Wallpaper/
+cp Wallpaper/wallhaven-2evx9g.jpg ~/Wallpaper/
 
 # Install AurHelper
 cd ~
