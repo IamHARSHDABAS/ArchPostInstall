@@ -17,13 +17,15 @@ sudo usermod -aG libvirt $USER
 mkdir ~/.config/alacritty
 mkdir ~/.config/i3
 mkdir ~/.config/polybar
-mkdir ~/Gimp
+mkdir ~/Archive
+mkdir ~/Java
 mkdir ~/Linux
 mkdir ~/Office
 mkdir ~/Screenshot
 mkdir ~/Telegram
+mkdir ~/Temp
 mkdir ~/Wallpaper
-mkdir ~/Wallpaper
+mkdir ~/Whatsapp
 sudo mkdir /etc/libvirt
 
 # Configs
@@ -34,7 +36,7 @@ cp DotFiles/Polybar/launch.sh ~/.config/polybar/
 sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 cp Wallpaper/wallhaven-2evx9g.jpg ~/Wallpaper/
 
-# Install AurHelper
+# Aur Helper
 cd ~
 git clone https://aur.archlinux.org/yay.git
 cd yay
