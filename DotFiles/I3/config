@@ -39,8 +39,8 @@ bindsym $mod+Return exec alacritty
 # Kill focused window
 bindsym $mod+Shift+q kill
 
-# Start dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run
+# Start Rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # change focus
 bindsym $mod+j focus left
