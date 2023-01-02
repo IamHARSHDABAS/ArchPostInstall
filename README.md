@@ -16,5 +16,6 @@ chmod +x Install.sh
 ./Install.sh
 ```
 ## Screenshots
-![App Screenshot](https://github.com/IamHARSHDABAS/I3PostInstall/blob/master/Screenshot/One.png?raw=true)
-![App Screenshot](https://github.com/IamHARSHDABAS/I3PostInstall/blob/master/Screenshot/Two.png?raw=true)
+![App Screenshot](https://github.com/IamHARSHDABAS/I3PostInstall/blob/master/Screenshot/I3.png?raw=true)
+![App Screenshot](https://github.com/IamHARSHDABAS/I3PostInstall/blob/master/Screenshot/Alacritty.png?raw=true)
+![App Screenshot](https://github.com/IamHARSHDABAS/I3PostInstall/blob/master/Screenshot/Rofi.png?raw=true)
