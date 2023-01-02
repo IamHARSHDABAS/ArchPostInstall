@@ -34,7 +34,8 @@ cp DotFiles/Alacritty/alacritty.yml ~/.config/alacritty/
 cp DotFiles/I3/config ~/.config/i3/
 cp DotFiles/Polybar/config.ini ~/.config/polybar/
 cp DotFiles/Polybar/launch.sh ~/.config/polybar/
-cp DotFiles/Rofi/config.rasi ~/.config/rofi
+cp DotFiles/Rofi/arthur.rasi ~/.config/rofi/
+cp DotFiles/Rofi/config.rasi ~/.config/rofi/
 sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 cp Wallpaper/wallhaven-2evx9g.jpg ~/Wallpaper/
 
