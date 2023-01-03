@@ -41,7 +41,10 @@ cp -r DotFiles/Nvim/* ~/.config/nvim
 sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt
 
 # Nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+mkdir -p ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+cd ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim
+cd ~
 
 # Aur Helper
 cd ~
