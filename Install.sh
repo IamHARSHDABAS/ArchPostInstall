@@ -17,8 +17,10 @@ sudo usermod -aG libvirt $USER
 mkdir ~/.config/alacritty
 mkdir ~/.config/polybar
 mkdir ~/.config/rofi
+mkdir ~/.config/nvim
 mkdir ~/Archive
 mkdir ~/Java
+mkdir ~/Gimp
 mkdir ~/Linux
 mkdir ~/Office
 mkdir ~/Screenshot
@@ -28,14 +30,18 @@ mkdir ~/Wallpaper
 mkdir ~/Whatsapp
 
 # Configs
-cp DotFiles/Alacritty/alacritty.yml ~/.config/alacritty/
-cp DotFiles/I3/config ~/.config/i3/
-cp DotFiles/Polybar/config.ini ~/.config/polybar/
-cp DotFiles/Polybar/launch.sh ~/.config/polybar/
-cp DotFiles/Rofi/arthur.rasi ~/.config/rofi/
-cp DotFiles/Rofi/config.rasi ~/.config/rofi/
-sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
-cp Wallpaper/wallhaven-2evx9g.jpg ~/Wallpaper/
+cp DotFiles/Alacritty/alacritty.yml ~/.config/alacritty
+cp DotFiles/I3/config ~/.config/i3
+cp DotFiles/Polybar/config.ini ~/.config/polybar
+cp DotFiles/Polybar/launch.sh ~/.config/polybar
+cp DotFiles/Rofi/arthur.rasi ~/.config/rofi
+cp DotFiles/Rofi/config.rasi ~/.config/rofi
+cp Wallpaper/wallhaven-2evx9g.jpg ~/Wallpaper
+cp -r DotFiles/Nvim/* ~/.config/nvim
+sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt
+
+# Nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Aur Helper
 cd ~
@@ -45,6 +51,6 @@ makepkg -si
 cd ~
 
 # Build Packages
-yay whatsapp-for-linux 
+yay whatsapp-for-linux
 yay tldr
 yay ttyper

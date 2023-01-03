@@ -13,9 +13,6 @@ o.number = true
 o.relativenumber = true
 
 -- Tabs
-o.expandtab = true
-o.smarttab = true
-o.autoindent = true
 o.tabstop = 4
 o.shiftwidth = 4
 
