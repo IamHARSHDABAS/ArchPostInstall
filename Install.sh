@@ -2,7 +2,7 @@
 
 # Install Packages
 sudo pacman -Syyu
-sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh maim neofetch neovim polybar openbsd-netcat qemu ranger spotify-launcher telegram-desktop unzip vde2 virt-manager virt-viewer zip
+sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh maim neofetch neovim polybar openbsd-netcat qemu ranger rofi spotify-launcher telegram-desktop unzip vde2 virt-manager virt-viewer zip
 
 # Bluetooth
 sudo systemctl enable bluetooth
