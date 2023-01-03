@@ -15,7 +15,6 @@ sudo usermod -aG libvirt $USER
 
 # make directory
 mkdir ~/.config/alacritty
-mkdir ~/.config/i3
 mkdir ~/.config/polybar
 mkdir ~/.config/rofi
 mkdir ~/Archive
@@ -27,7 +26,6 @@ mkdir ~/Telegram
 mkdir ~/Temp
 mkdir ~/Wallpaper
 mkdir ~/Whatsapp
-sudo mkdir /etc/libvirt
 
 # Configs
 cp DotFiles/Alacritty/alacritty.yml ~/.config/alacritty/
