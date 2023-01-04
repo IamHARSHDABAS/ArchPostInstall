@@ -10,9 +10,6 @@ git clone https://github.com/IamHARSHDABAS/I3PostInstall
 cd I3PostInstall
 ``` 
 ```bash
-chmod +x Install.sh
-```
-```bash
 ./Install.sh
 ```
 ## Screenshots
