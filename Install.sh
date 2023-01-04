@@ -30,12 +30,12 @@ mkdir -p $HOME/.config/polybar/
 mkdir -p $HOME/.config/rofi/
 
 # Configs
-cp -r DotFiles/Alacritty/* $HOME/.config/alacritty/
-cp -r DotFiles/I3/* $HOME/.config/i3/
-cp -r DotFiles/Nvim/* $HOME/.config/nvim/
-cp -r DotFiles/Polybar/* $HOME/.config/polybar/
-cp -r DotFiles/Rofi/* $HOME/.config/rofi/
-cp -r Wallpaper/* $HOME/Wallpaper/
+cp -r I3PostInstall/DotFiles/Alacritty/* $HOME/.config/alacritty/
+cp -r I3PostInstall/DotFiles/I3/* $HOME/.config/i3/
+cp -r I3PostInstall/DotFiles/Nvim/* $HOME/.config/nvim/
+cp -r I3PostInstall/DotFiles/Polybar/* $HOME/.config/polybar/
+cp -r I3PostInstall/DotFiles/Rofi/* $HOME/.config/rofi/
+cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
 sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 
 # Nvim
@@ -52,9 +52,10 @@ makepkg -si
 cd $HOME/
 
 # Build Packages
-yay whatsapp-for-linux
 yay tldr
 yay ttyper
+yay visual-studio-code
+yay whatsapp-for-linux
 
 # Reboot
 reboot
