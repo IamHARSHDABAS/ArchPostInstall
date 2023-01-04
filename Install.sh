@@ -36,7 +36,7 @@ cp -r I3PostInstall/DotFiles/Nvim/* $HOME/.config/nvim/
 cp -r I3PostInstall/DotFiles/Polybar/* $HOME/.config/polybar/
 cp -r I3PostInstall/DotFiles/Rofi/* $HOME/.config/rofi/
 cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
-sudo cp DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
+sudo cp I3PostInstall/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 
 # Nvim
 mkdir -p $HOME/.local/share/nvim/site/pack/packer/start/
