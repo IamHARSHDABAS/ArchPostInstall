@@ -22,7 +22,7 @@ git clone https://github.com/IamHARSHDABAS/I3PostInstall
 - [Gimp](https://archlinux.org/packages/extra/x86_64/gimp/)
 - [Git](https://archlinux.org/packages/extra/x86_64/git/)
 - [Go](https://archlinux.org/packages/community/x86_64/go/)
-- [IntelliJ IDEA Community](https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community)[FLATPAK]
+- [IntelliJ IDEA Community](https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community) [FLATPAK]
 - [Jdk-openjdk](https://archlinux.org/packages/extra/x86_64/jdk-openjdk/)
 - [Jre-openjdk](https://archlinux.org/packages/extra/x86_64/jre-openjdk/)
 - [Libguestfs](https://archlinux.org/packages/community/x86_64/libguestfs/)
@@ -37,11 +37,11 @@ git clone https://github.com/IamHARSHDABAS/I3PostInstall
 - [Rust](https://archlinux.org/packages/extra/x86_64/rust/)
 - [Spotify-launcher](https://archlinux.org/packages/community/x86_64/spotify-launcher/)
 - [Telegram-desktop](https://archlinux.org/packages/community/x86_64/telegram-desktop/)
-- [Tealdeer-git](https://aur.archlinux.org/packages/tealdeer-git)[AUR]
-- [Ttyper-git](https://aur.archlinux.org/packages/ttyper-git)[AUR]
+- [Tealdeer-git](https://aur.archlinux.org/packages/tealdeer-git) [AUR]
+- [Ttyper-git](https://aur.archlinux.org/packages/ttyper-git) [AUR]
 - [Unzip](https://archlinux.org/packages/extra/x86_64/unzip/)
 - [Vde2](https://archlinux.org/packages/extra/x86_64/vde2/)
 - [Virt-manager](https://archlinux.org/packages/community/any/virt-manager/)
 - [Virt-viewer](https://archlinux.org/packages/community/x86_64/virt-viewer/)
-- [Whatsapp-for-linux](https://aur.archlinux.org/packages/whatsapp-for-linux)[AUR]
+- [Whatsapp-for-linux](https://aur.archlinux.org/packages/whatsapp-for-linux) [AUR]
 - [Zip](https://archlinux.org/packages/extra/x86_64/zip/)
