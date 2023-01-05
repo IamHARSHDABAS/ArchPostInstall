@@ -7,14 +7,43 @@ font pango:monospace 10
 # Start i3
 exec --no-startup-id dex --autostart --environment i3
 
+# Start network manager
+exec --no-startup-id nm-applet
+
+# Start polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Start rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun
+
+# Start terminal
+bindsym $mod+Return exec alacritty
+
+# Reload configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3
+bindsym $mod+Shift+r restart
+
 # Wallpaper
 exec feh --bg-fill Wallpaper/wallhaven-2evx9g.jpg
 
-# Network Manager
-exec --no-startup-id nm-applet
+# Screenshot
+bindsym Print exec --no-startup-id maim "/home/$USER/Screenshot/$(date).png"
 
-# Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# Gaps
+gaps inner 15
+
+# Windows boader
+default_border pixel 0
+default_floating_border pixel 0
+
+# Mouse + Super to drag floating windows
+floating_modifier $mod
+
+# Brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Adjust volume
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -22,45 +51,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
-# Brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
-
-# Screenshot
-bindsym Print exec --no-startup-id maim "/home/$USER/Screenshot/$(date).png"
-
-# Mouse + Super to drag floating windows
-floating_modifier $mod
-
-# Start terminal
-bindsym $mod+Return exec alacritty
-
-# Kill focused window
-bindsym $mod+Shift+q kill
-
-# Start Rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun
-
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
-# move window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # Horizontal orientation
 bindsym $mod+h split h
@@ -70,6 +60,9 @@ bindsym $mod+v split v
 
 # Enter fullscreen
 bindsym $mod+f fullscreen toggle
+
+# Kill focused window
+bindsym $mod+Shift+q kill
 
 # Change layout
 bindsym $mod+s layout stacking
@@ -81,6 +74,18 @@ bindsym $mod+Shift+space floating toggle
 
 # Change focus tiling / floating
 bindsym $mod+space focus mode_toggle
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 # Workspace name
 set $ws1 "1"
@@ -117,28 +122,3 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
-
-# Reload configuration file
-bindsym $mod+Shift+c reload
-
-# Restart i3
-bindsym $mod+Shift+r restart
-
-# Resize window
-mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-	bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-bindsym $mod+r mode "resize"
-
-# Gaps
-gaps inner 15
-
-# Windows boader
-default_border pixel 0
-default_floating_border pixel 0
