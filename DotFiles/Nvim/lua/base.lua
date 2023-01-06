@@ -6,7 +6,7 @@ local opt = vim.opt
 o.termguicolors = true
 
 -- Scroll limit
-o.scrolloff = 10
+o.scrolloff = 5
 
 -- Number line
 o.number = true
