@@ -31,6 +31,7 @@ mkdir -p $HOME/.config/rofi/
 
 # Configs
 cp -r I3PostInstall/DotFiles/Alacritty/* $HOME/.config/alacritty/
+cp -r I3PostInstall/DotFiles/Bash/* $HOME/
 cp -r I3PostInstall/DotFiles/I3/* $HOME/.config/i3/
 cp -r I3PostInstall/DotFiles/Nvim/* $HOME/.config/nvim/
 cp -r I3PostInstall/DotFiles/Polybar/* $HOME/.config/polybar/
