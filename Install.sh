@@ -14,16 +14,16 @@ sudo systemctl start libvirtd
 sudo usermod -aG libvirt $USER
 
 # make directory
-mkdir $HOME/Archive/
-mkdir $HOME/Java/
-mkdir $HOME/Gimp/
-mkdir $HOME/Linux/
-mkdir $HOME/Office/
-mkdir $HOME/Screenshot/
-mkdir $HOME/Telegram/
-mkdir $HOME/Temp/
-mkdir $HOME/Wallpaper/
-mkdir $HOME/Whatsapp/
+mkdir -p $HOME/Archive/
+mkdir -p $HOME/Gimp/
+mkdir -p $HOME/Iso/
+mkdir -p $HOME/Linux/
+mkdir -p $HOME/Office/
+mkdir -p $HOME/Screenshot/
+mkdir -p $HOME/Telegram/
+mkdir -p $HOME/Temp/
+mkdir -p $HOME/Wallpaper/
+mkdir -p $HOME/Whatsapp/
 mkdir -p $HOME/.config/alacritty/
 mkdir -p $HOME/.config/nvim/
 mkdir -p $HOME/.config/polybar/
@@ -37,7 +37,7 @@ cp -r I3PostInstall/DotFiles/Nvim/* $HOME/.config/nvim/
 cp -r I3PostInstall/DotFiles/Polybar/* $HOME/.config/polybar/
 cp -r I3PostInstall/DotFiles/Rofi/* $HOME/.config/rofi/
 cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
-sudo cp I3PostInstall/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
+sudo cp -r I3PostInstall/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 
 # Nvim
 mkdir -p $HOME/.local/share/nvim/site/pack/packer/start/
