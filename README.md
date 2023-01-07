@@ -27,6 +27,7 @@ git clone https://github.com/IamHARSHDABAS/I3PostInstall
 - [Jre-openjdk](https://archlinux.org/packages/extra/x86_64/jre-openjdk/)
 - [Libguestfs](https://archlinux.org/packages/community/x86_64/libguestfs/)
 - [Libreoffice-fresh](https://archlinux.org/packages/extra/x86_64/libreoffice-fresh/)
+- [Lsd] (https://archlinux.org/packages/community/x86_64/lsd/)
 - [Maim](https://archlinux.org/packages/community/x86_64/maim/)
 - [Neofetch](https://archlinux.org/packages/community/any/neofetch/)
 - [Neovim](https://archlinux.org/packages/community/x86_64/neovim/)
