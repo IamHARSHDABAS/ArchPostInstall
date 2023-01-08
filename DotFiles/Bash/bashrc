@@ -27,3 +27,5 @@ alias install="yay"
 alias orphan="yay -Yc"
 alias remove="yay -Rns"
 alias update="yay"
+
+alias later="shutdown now"
