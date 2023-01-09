@@ -45,6 +45,10 @@ cd $HOME/.local/share/nvim/site/pack/packer/start/
 git clone https://github.com/wbthomason/packer.nvim
 cd $HOME/
 
+# My Repos
+git clone https://github.com/IamHARSHDABAS/Java
+git clone https://github.com/IamHARSHDABAS/C
+
 # Flatpak
 flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 
