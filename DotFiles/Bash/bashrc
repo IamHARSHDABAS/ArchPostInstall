@@ -5,6 +5,7 @@ PS1='\[\e[0;91m\]\w \[\e[0;91m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | c
 alias ~="cd $HOME"
 alias ..="cd .."
 alias Backup="cd $HOME/Backup/"
+alias C="cd $HOME/C"
 alias Gimp="cd $HOME/Gimp"
 alias I3PostInstall="cd $HOME/I3PostInstall"
 alias Iso="cd $HOME/Iso"
