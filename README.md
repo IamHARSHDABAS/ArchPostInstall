@@ -1,4 +1,4 @@
-# I3 Post Inatall
+# I3 Post Install
 My script to Rice I3 arch
 
 ## Installation
