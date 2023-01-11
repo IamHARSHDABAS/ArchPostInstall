@@ -1,93 +1,53 @@
-# Super
 set $mod Mod4
 
-# Fonts
+floating_modifier $mod
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
 font pango:monospace 10
 
-# Start i3
 exec --no-startup-id dex --autostart --environment i3
-
-# Start network manager
 exec --no-startup-id nm-applet
-
-# Start polybar
+exec feh --bg-fill Wallpaper/wallhaven-2evx9g.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun
-
-# Start terminal
-bindsym $mod+Return exec alacritty
-
-# Reload configuration file
-bindsym $mod+Shift+c reload
-
-# Restart i3
-bindsym $mod+Shift+r restart
-
-# Wallpaper
-exec feh --bg-fill Wallpaper/wallhaven-2evx9g.jpg
-
-# Screenshot
-bindsym Print exec --no-startup-id maim "/home/$USER/Screenshot/$(date).png"
-
-# Gaps
 gaps inner 15
-
-# Windows boader
 default_border pixel 0
 default_floating_border pixel 0
 
-# Mouse + Super to drag floating windows
-floating_modifier $mod
-
-# Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
-# Adjust volume
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Horizontal orientation
-bindsym $mod+h split h
+bindsym Print exec --no-startup-id maim "/home/$USER/Screenshot/$(date).png"
 
-# Vertical orientation
-bindsym $mod+v split v
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Return exec alacritty
 
-# Enter fullscreen
-bindsym $mod+f fullscreen toggle
-
-# Kill focused window
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q kill
 
-# Change layout
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# Toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# Change focus tiling / floating
-bindsym $mod+space focus mode_toggle
-
-# change focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move window
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Workspace name
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -99,7 +59,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# Switch workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -111,7 +70,6 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-# Move window to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3

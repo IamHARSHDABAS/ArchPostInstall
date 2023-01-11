@@ -1,15 +1,7 @@
 colors:
-    # Default colors
     primary:
         background: '#000000'
-        foreground: '#AA00ff'
-    
-    # Cursor colors
-    cursor:
-        text: '#000000'
-        cursor: '#AA00ff'
-
-    # Normal colors
+        foreground: '#FFFFFF'
     normal:
         black: '#000000'
         red: '#FF00AA'
@@ -19,8 +11,6 @@ colors:
         magenta: '#AA00FF'
         cyan: '#00FFAA'
         white: '#ffffff'
-
-    # Bright colors
     bright:
         black: '#000000'
         red: '#FF00AA'
