@@ -1,7 +1,7 @@
 colors:
     primary:
         background: '#000000'
-        foreground: '#FFFFFF'
+        foreground: '#AA00FF'
     normal:
         black: '#000000'
         red: '#FF00AA'
