@@ -46,8 +46,9 @@ git clone https://github.com/wbthomason/packer.nvim
 cd $HOME/
 
 # My Repos
-git clone https://github.com/IamHARSHDABAS/Java
 git clone https://github.com/IamHARSHDABAS/C
+git clone https://github.com/IamHARSHDABAS/Java
+git clone https://github.com/IamHARSHDABAS/Shooting
 
 # Flatpak
 flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
