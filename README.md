@@ -25,7 +25,6 @@ git clone https://github.com/IamHARSHDABAS/I3PostInstall
 - [IntelliJ IDEA Community](https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community) [FLATPAK]
 - [Jdk-openjdk](https://archlinux.org/packages/extra/x86_64/jdk-openjdk/)
 - [Jre-openjdk](https://archlinux.org/packages/extra/x86_64/jre-openjdk/)
-- [Lf](https://archlinux.org/packages/community/x86_64/lf/)
 - [Libguestfs](https://archlinux.org/packages/community/x86_64/libguestfs/)
 - [Libreoffice-fresh](https://archlinux.org/packages/extra/x86_64/libreoffice-fresh/)
 - [Lsd](https://archlinux.org/packages/community/x86_64/lsd/)
@@ -34,6 +33,7 @@ git clone https://github.com/IamHARSHDABAS/I3PostInstall
 - [Neovim](https://archlinux.org/packages/community/x86_64/neovim/)
 - [Polybar](https://archlinux.org/packages/community/x86_64/polybar/)
 - [Qemu-base](https://archlinux.org/packages/extra/x86_64/qemu-base/)
+- [Ranger](https://archlinux.org/packages/community/any/ranger/)
 - [Rofi](https://archlinux.org/packages/community/x86_64/rofi/)
 - [Rust](https://archlinux.org/packages/extra/x86_64/rust/)
 - [Spotify-launcher](https://archlinux.org/packages/community/x86_64/spotify-launcher/)
