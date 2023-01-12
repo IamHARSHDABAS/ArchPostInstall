@@ -3,10 +3,7 @@ My post-install script for i3wm-gaps
 
 ## Installation
 ```bash
-git clone https://github.com/IamHARSHDABAS/I3PostInstall
-```
-```bash
-./I3PostInstall/Install.sh
+git clone https://github.com/IamHARSHDABAS/I3PostInstall && ./I3PostInstall/Install.sh
 ```
 
 ## Packages
