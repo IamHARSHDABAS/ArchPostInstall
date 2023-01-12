@@ -1,5 +1,5 @@
 # I3 Post Install
-My i3wm-gaps post install script
+My post-install script for i3wm-gaps
 
 ## Installation
 ```bash
