@@ -13,6 +13,12 @@ sudo systemctl enable libvirtd
 sudo systemctl start libvirtd
 sudo usermod -aG libvirt $USER
 
+# My Repos
+git clone https://github.com/IamHARSHDABAS/C
+git clone https://github.com/IamHARSHDABAS/DotFiles
+git clone https://github.com/IamHARSHDABAS/Java
+git clone https://github.com/IamHARSHDABAS/Shooting
+
 # make directory
 mkdir -p $HOME/Archive/
 mkdir -p $HOME/Gimp/
@@ -30,25 +36,20 @@ mkdir -p $HOME/.config/polybar/
 mkdir -p $HOME/.config/rofi/
 
 # Configs
-cp -r I3PostInstall/DotFiles/Alacritty/* $HOME/.config/alacritty/
-cp -r I3PostInstall/DotFiles/Bash/* $HOME/.bashrc
-cp -r I3PostInstall/DotFiles/I3/* $HOME/.config/i3/
-cp -r I3PostInstall/DotFiles/Nvim/* $HOME/.config/nvim/
-cp -r I3PostInstall/DotFiles/Polybar/* $HOME/.config/polybar/
-cp -r I3PostInstall/DotFiles/Rofi/* $HOME/.config/rofi/
-cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
-sudo cp -r I3PostInstall/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
+cp -r $HOME/DotFiles/Alacritty/* $HOME/.config/alacritty/
+cp -r $HOME/DotFiles/Bash/* $HOME/.bashrc
+cp -r $HOME/DotFiles/I3/* $HOME/.config/i3/
+cp -r $HOME/DotFiles/Nvim/* $HOME/.config/nvim/
+cp -r $HOME/DotFiles/Polybar/* $HOME/.config/polybar/
+cp -r $HOME/DotFiles/Rofi/* $HOME/.config/rofi/
+cp -r $HOME/Wallpaper/* $HOME/Wallpaper/
+sudo cp -r $HOME/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 
 # Nvim
 mkdir -p $HOME/.local/share/nvim/site/pack/packer/start/
 cd $HOME/.local/share/nvim/site/pack/packer/start/
 git clone https://github.com/wbthomason/packer.nvim
 cd $HOME/
-
-# My Repos
-git clone https://github.com/IamHARSHDABAS/C
-git clone https://github.com/IamHARSHDABAS/Java
-git clone https://github.com/IamHARSHDABAS/Shooting
 
 # Flatpak
 flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
