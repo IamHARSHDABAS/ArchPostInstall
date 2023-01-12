@@ -1,5 +1,5 @@
 # I3 Post Install
-My script to Rice I3 arch
+My i3wm-gaps post install script
 
 ## Installation
 ```bash
