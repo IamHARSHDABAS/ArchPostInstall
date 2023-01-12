@@ -42,7 +42,7 @@ cp -r $HOME/DotFiles/I3/* $HOME/.config/i3/
 cp -r $HOME/DotFiles/Nvim/* $HOME/.config/nvim/
 cp -r $HOME/DotFiles/Polybar/* $HOME/.config/polybar/
 cp -r $HOME/DotFiles/Rofi/* $HOME/.config/rofi/
-cp -r $HOME/Wallpaper/* $HOME/Wallpaper/
+cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
 sudo cp -r $HOME/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 
 # Nvim
