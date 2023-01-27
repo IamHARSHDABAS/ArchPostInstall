@@ -17,7 +17,6 @@ sudo usermod -aG libvirt $USER
 git clone https://github.com/IamHARSHDABAS/C
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
-git clone https://github.com/IamHARSHDABAS/Shooting
 
 # make directory
 mkdir -p $HOME/Archive/
@@ -65,6 +64,3 @@ cd $HOME/
 yay tldr
 yay ttyper
 yay whatsapp-for-linux
-
-# Reboot
-reboot
