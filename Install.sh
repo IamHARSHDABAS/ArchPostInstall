@@ -17,6 +17,7 @@ sudo usermod -aG libvirt $USER
 git clone https://github.com/IamHARSHDABAS/C
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
+git clone https://github.com/IamHARSHDABAS/NeoVim
 
 # make directory
 mkdir -p $HOME/Archive/
@@ -39,10 +40,10 @@ mkdir -p $HOME/.config/tealdeer/
 cp -r $HOME/DotFiles/Alacritty/* $HOME/.config/alacritty/
 cp -r $HOME/DotFiles/Bash/* $HOME/.bashrc
 cp -r $HOME/DotFiles/I3/* $HOME/.config/i3/
-cp -r $HOME/DotFiles/Nvim/* $HOME/.config/nvim/
 cp -r $HOME/DotFiles/Polybar/* $HOME/.config/polybar/
 cp -r $HOME/DotFiles/Rofi/* $HOME/.config/rofi/
 cp -r $HOME/DotFiles/Tealdeer/* $HOME/.config/tealdeer/
+cp -r $HOME/NeoVim/* $HOME/.config/nvim/
 cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
 sudo cp -r $HOME/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
 
