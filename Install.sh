@@ -2,7 +2,7 @@
 
 # Install Packages
 sudo pacman -Syyu
-sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox flatpak gimp git go jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim polybar qemu-base ranger rofi rust spotify-launcher telegram-desktop unzip vde2 virt-manager virt-viewer zip
+sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git go jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim polybar qemu-base ranger rofi rust spotify-launcher telegram-desktop unzip vde2 virt-manager virt-viewer zip
 
 # Bluetooth
 sudo systemctl enable bluetooth
@@ -49,9 +49,6 @@ mkdir -p $HOME/.local/share/nvim/site/pack/packer/start/
 cd $HOME/.local/share/nvim/site/pack/packer/start/
 git clone https://github.com/wbthomason/packer.nvim
 cd $HOME/
-
-# Flatpak
-flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 
 # Aur Helper
 cd $HOME/
