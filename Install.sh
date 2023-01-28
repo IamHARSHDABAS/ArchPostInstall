@@ -62,4 +62,5 @@ cd $HOME/
 # Build Packages
 yay tldr
 yay ttyper
+yay visual-studio-code-bin
 yay whatsapp-for-linux
