@@ -26,7 +26,7 @@ mkdir -p $HOME/Linux/
 mkdir -p $HOME/Office/
 mkdir -p $HOME/Screenshot/
 mkdir -p $HOME/Telegram/
-mkdir -p $HOME/Temp/
+mkdir -p $HOME/Temporary/
 mkdir -p $HOME/Wallpaper/
 mkdir -p $HOME/Whatsapp/
 mkdir -p $HOME/.config/alacritty/
