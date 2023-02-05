@@ -20,11 +20,6 @@ git clone https://github.com/IamHARSHDABAS/Java
 git clone https://github.com/IamHARSHDABAS/NeoVim
 
 # make directory
-mkdir -p $HOME/Archive/
-mkdir -p $HOME/Gimp/
-mkdir -p $HOME/Iso/
-mkdir -p $HOME/Linux/
-mkdir -p $HOME/Office/
 mkdir -p $HOME/Screenshot/
 mkdir -p $HOME/Telegram/
 mkdir -p $HOME/Temporary/
