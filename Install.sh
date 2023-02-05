@@ -2,7 +2,7 @@
 
 # Install Packages
 sudo pacman -Syyu
-sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim polybar qemu-base ranger rofi spotify-launcher telegram-desktop tree unzip vde2 virt-manager virt-viewer zip
+sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim polybar qemu-base ranger rofi spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip vde2 virt-manager virt-viewer zip
 
 # Bluetooth
 sudo systemctl enable bluetooth
@@ -16,8 +16,11 @@ sudo usermod -aG libvirt $USER
 # My Repos
 git clone https://github.com/IamHARSHDABAS/C
 git clone https://github.com/IamHARSHDABAS/DotFiles
+git clone https://github.com/IamHARSHDABAS/IamHARSHDABAS
 git clone https://github.com/IamHARSHDABAS/Java
 git clone https://github.com/IamHARSHDABAS/NeoVim
+git clone https://github.com/IamHARSHDABAS/Sweetify
+git clone https://github.com/IamHARSHDABAS/SweetifyNeoVim
 
 # make directory
 mkdir -p $HOME/Screenshot/
