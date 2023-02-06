@@ -2,7 +2,7 @@
 
 # Install Packages
 sudo pacman -Syyu
-sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim polybar qemu-base ranger rofi spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip vde2 virt-manager virt-viewer zip
+sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim nodejs npm polybar python python-pip qemu-base ranger ripgrep rofi spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip vde2 virt-manager virt-viewer xsel zip
 
 # Bluetooth
 sudo systemctl enable bluetooth
@@ -12,6 +12,10 @@ sudo systemctl start bluetooth
 sudo systemctl enable libvirtd
 sudo systemctl start libvirtd
 sudo usermod -aG libvirt $USER
+
+# Neovim
+pip install pynvim
+sudo npm i -g Neovim
 
 # My Repos
 git clone https://github.com/IamHARSHDABAS/C
