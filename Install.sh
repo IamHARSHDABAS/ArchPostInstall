@@ -2,7 +2,7 @@
 
 # Install Packages
 sudo pacman -Syyu
-sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim nodejs npm polybar python python-pip qemu-base ranger ripgrep rofi spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip vde2 virt-manager virt-viewer xsel zip
+sudo pacman -S alacritty bluez bluez-utils bridge-utils brightnessctl dnsmasq feh firefox flatpak gimp git jdk-openjdk jre-openjdk libguestfs libreoffice-fresh lsd maim neofetch neovim nodejs npm polybar python python-pip qemu-base ranger ripgrep rofi spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip vde2 virt-manager virt-viewer xsel zip
 
 # Bluetooth
 sudo systemctl enable bluetooth
@@ -48,3 +48,6 @@ cp -r $HOME/DotFiles/Tealdeer/* $HOME/.config/tealdeer/
 cp -r $HOME/NeoVim/* $HOME/.config/nvim/
 cp -r I3PostInstall/Wallpaper/* $HOME/Wallpaper/
 sudo cp -r $HOME/DotFiles/Libvirt/libvirtd.conf /etc/libvirt/
+
+# Flatpak
+flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
