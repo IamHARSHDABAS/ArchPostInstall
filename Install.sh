@@ -12,10 +12,16 @@ git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pac
 pip install pynvim
 # sudo npm i -g Neovim  # ERROR 404
 
-# My Repos
+# Git
+# git config --global user.email "[USER_EMAIL]"
+# git config --global user.name "[USER_NAME]"
 git clone https://github.com/IamHARSHDABAS/C
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
 git clone https://github.com/IamHARSHDABAS/NeoVim
 git clone https://github.com/IamHARSHDABAS/Sweetify
 git clone https://github.com/IamHARSHDABAS/ClickCounter
+
+# Aur helper
+git clone https://aur.archlinux.org/yay.git
+cd yay && makepkg -si
