@@ -3,7 +3,11 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S alacritty bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim ripgrep spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
+sudo pacman -S alacritty bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim ripgrep spotify-launcher telegram-desktop tree unzip zip
+
+# Font
+sudo rm -rf /usr/share/fonts/*
+sudo pacman -S ttf-firacode-nerd
 
 # Bluetooth
 sudo systemctl enable bluetooth
@@ -23,9 +27,9 @@ git clone https://github.com/IamHARSHDABAS/ClickCounter
 mkdir .config/alacritty/
 mkdir .config/i3/
 mkdir .config/nvim/
-cp DotFiles/Alacritty/alacritty .config/alacritty/
+cp DotFiles/Alacritty/alacritty.yml .config/alacritty/
 cp DotFiles/I3/config .config/i3/
-cp DotFiles/Bash .bashrc
+cp DotFiles/Bash/bashrc .bashrc
 cp NeoVim/* .config/nvim/
 
 # Aur helper
