@@ -27,10 +27,10 @@ git clone https://github.com/IamHARSHDABAS/ClickCounter
 mkdir .config/alacritty/
 mkdir .config/i3/
 mkdir .config/nvim/
-cp DotFiles/Alacritty/alacritty.yml .config/alacritty/
-cp DotFiles/I3/config .config/i3/
-cp DotFiles/Bash/bashrc .bashrc
-cp NeoVim/* .config/nvim/
+cp -r DotFiles/Alacritty/alacritty.yml .config/alacritty/
+cp -r DotFiles/I3/config .config/i3/
+cp -r DotFiles/Bash/bashrc .bashrc
+cp -r NeoVim/* .config/nvim/
 
 # Aur helper
 git clone https://aur.archlinux.org/yay.git
