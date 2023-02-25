@@ -25,3 +25,7 @@ git clone https://github.com/IamHARSHDABAS/ClickCounter
 # Aur helper
 git clone https://aur.archlinux.org/yay.git
 cd yay && makepkg -si
+
+# Aur
+yay android-studio
+yay visual-studio-code-bin
