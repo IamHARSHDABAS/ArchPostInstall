@@ -3,11 +3,14 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim ripgrep spotify-launcher telegram-desktop tree unzip zip
+sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim npm ripgrep spotify-launcher telegram-desktop tree unzip zip
 
 # Font
 sudo rm -rf /usr/share/fonts/*
 sudo pacman -S ttf-firacode-nerd
+
+# NeoVim
+sudo npm install neovim
 
 # Bluetooth
 sudo systemctl enable bluetooth
