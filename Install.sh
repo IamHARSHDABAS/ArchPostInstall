@@ -8,6 +8,7 @@ sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
 # Neovim
+git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 pip install pynvim
 # sudo npm i -g Neovim  # ERROR 404
 
