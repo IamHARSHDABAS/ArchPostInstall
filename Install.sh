@@ -1,16 +1,13 @@
 #!/bin/bash
 
+cd $HOME
+
 # Install Packages
-sudo pacman -S alacritty bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim npm python-pip ranger ripgrep spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
+sudo pacman -S alacritty bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim ripgrep spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
 
 # Bluetooth
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
-
-# Neovim
-git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-pip install pynvim
-# sudo npm i -g Neovim  # ERROR 404
 
 # Git
 # git config --global user.email "[USER_EMAIL]"
@@ -22,10 +19,18 @@ git clone https://github.com/IamHARSHDABAS/NeoVim
 git clone https://github.com/IamHARSHDABAS/Sweetify
 git clone https://github.com/IamHARSHDABAS/ClickCounter
 
+# config
+mkdir .config/alacritty/
+mkdir .config/i3/
+mkdir .config/nvim/
+cp DotFiles/Alacritty/alacritty .config/alacritty/
+cp DotFiles/I3/config .config/i3/
+cp DotFiles/Bash .bashrc
+cp NeoVim/* .config/nvim/
+
 # Aur helper
 git clone https://aur.archlinux.org/yay.git
 cd yay && makepkg -si
 
 # Aur
 yay android-studio
-yay visual-studio-code-bin
