@@ -3,7 +3,7 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk libreoffice-fresh lsd neofetch neovim npm ripgrep spotify-launcher telegram-desktop tree unzip zip
+sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk kitty libreoffice-fresh lsd neofetch neovim npm ripgrep spotify-launcher telegram-desktop tree unzip zip
 
 # Font
 sudo rm -rf /usr/share/fonts/*
@@ -29,9 +29,11 @@ git clone https://github.com/IamHARSHDABAS/ClickCounter
 # config
 mkdir .config/alacritty/
 mkdir .config/i3/
+mkdir .config/kitty/
 mkdir .config/nvim/
 cp -r DotFiles/Alacritty/alacritty.yml .config/alacritty/
 cp -r DotFiles/I3/config .config/i3/
+cp -r DotFiles/Kitty/kitty.conf .config/kitty/
 cp -r DotFiles/Bash/bashrc .bashrc
 cp -r NeoVim/* .config/nvim/
 
