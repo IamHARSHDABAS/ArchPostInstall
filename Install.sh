@@ -3,7 +3,7 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk kitty libreoffice-fresh lsd neofetch neovim npm ripgrep spotify-launcher telegram-desktop tree unzip zip
+sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl feh firefox gimp git jdk-openjdk kitty libreoffice-fresh lsd neofetch neovim npm ripgrep scrot spotify-launcher telegram-desktop tree unzip zip
 
 # Font
 sudo rm -rf /usr/share/fonts/*
@@ -27,6 +27,7 @@ git clone https://github.com/IamHARSHDABAS/Sweetify
 git clone https://github.com/IamHARSHDABAS/ClickCounter
 
 # config
+mkdir Screenshot/
 mkdir .config/alacritty/
 mkdir .config/i3/
 mkdir .config/kitty/
