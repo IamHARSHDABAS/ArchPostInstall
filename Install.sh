@@ -3,7 +3,7 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl clang cmake feh firefox gimp git jdk-openjdk kitty libreoffice-fresh lsd neofetch neovim npm ripgrep scrot spotify-launcher telegram-desktop tree unzip zip
+sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl clang cmake feh firefox gimp git jdk-openjdk kitty libreoffice-fresh lsd neofetch neovim ninja npm ripgrep scrot spotify-launcher telegram-desktop tree unzip zip
 
 # Font
 sudo rm -rf /usr/share/fonts/*
