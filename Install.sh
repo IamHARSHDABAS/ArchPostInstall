@@ -48,3 +48,4 @@ yay google-chrome
 
 # Flutter
 flutter doctor --android-licenses
+sudo cp /usr/bin/google-chrome-stable /usr/bin/google-chrome
