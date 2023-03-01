@@ -44,3 +44,7 @@ cd yay && makepkg -si
 
 # Aur
 yay android-studio
+yay google-chrome
+
+# Flutter
+flutter doctor --android-licenses
