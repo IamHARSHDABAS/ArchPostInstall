@@ -28,6 +28,7 @@ git clone https://github.com/IamHARSHDABAS/ClickCounter
 
 # config
 mkdir Screenshot/
+mkdir Temp
 mkdir .config/alacritty/
 mkdir .config/i3/
 mkdir .config/kitty/
