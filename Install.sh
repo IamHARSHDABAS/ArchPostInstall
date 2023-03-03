@@ -44,6 +44,7 @@ cd yay && makepkg -si
 
 # Aur
 yay android-studio
+yay visual-studio-code-bin
 yay google-chrome
 
 # Flutter
