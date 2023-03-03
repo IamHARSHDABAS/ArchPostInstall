@@ -20,15 +20,19 @@ sudo systemctl start bluetooth
 # git config --global user.email "[USER_EMAIL]"
 # git config --global user.name "[USER_NAME]"
 git clone https://github.com/IamHARSHDABAS/C
+git clone https://github.com/IamHARSHDABAS/click_counter
+git clone https://github.com/IamHARSHDABAS/ClickCounter
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
+git clone https://github.com/IamHARSHDABAS/namer
 git clone https://github.com/IamHARSHDABAS/NeoVim
+git clone https://github.com/IamHARSHDABAS/shoot
 git clone https://github.com/IamHARSHDABAS/Sweetify
 git clone https://github.com/IamHARSHDABAS/ClickCounter
 
 # config
 mkdir Screenshot/
-mkdir Temp
+mkdir Temp/
 mkdir .config/alacritty/
 mkdir .config/i3/
 mkdir .config/kitty/
