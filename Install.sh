@@ -31,6 +31,7 @@ git clone https://github.com/IamHARSHDABAS/Sweetify
 
 # config
 cp -r DotFiles/Bash/bashrc ~/.bashrc
+cp -r DotFiles/Konsole/* ~/.local/share/konsole/
 cp -r NeoVim/* ~/.config/nvim/
 
 # Paru
