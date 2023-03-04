@@ -3,7 +3,7 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S bluez bluez-utils firefox lsd neofetch neovim npm ripgrep spotify-launcher telegram-desktop tree ttf-firacode-nerd
+sudo pacman -S bluez bluez-utils firefox lsd neofetch neovim npm ripgrep spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd
 
 # NeoVim
 sudo npm install neovim
