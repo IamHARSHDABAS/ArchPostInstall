@@ -32,3 +32,16 @@ git clone https://github.com/IamHARSHDABAS/Sweetify
 # config
 cp -r DotFiles/Bash/bashrc ~/.bashrc
 cp -r NeoVim/* ~/.config/nvim/
+
+# Paru
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd ..
+rm -rf paru
+
+# Aur
+paru android-studio
+paru visual-studio-code-bin
+paru tealdeer-git
