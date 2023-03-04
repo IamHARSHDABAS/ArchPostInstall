@@ -3,11 +3,7 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S alacritty android-tools bluez bluez-utils brightnessctl clang cmake feh firefox gimp git jdk-openjdk kitty libreoffice-fresh lsd neofetch neovim ninja npm ripgrep scrot scrcpy spotify-launcher telegram-desktop tree unzip zip
-
-# Font
-sudo rm -rf /usr/share/fonts/*
-sudo pacman -S ttf-firacode-nerd
+sudo pacman -S bluez bluez-utils firefox lsd neofetch neovim npm ripgrep spotify-launcher telegram-desktop tree ttf-firacode-nerd
 
 # NeoVim
 sudo npm install neovim
@@ -16,11 +12,15 @@ sudo npm install neovim
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
+# Dirs
+mkdir ~/.config/nvim/
+mkdir Repos
+
 # Git
-# git config --global user.email "[USER_EMAIL]"
-# git config --global user.name "[USER_NAME]"
+cd Repos
+#git config --global user.email ""
+#git config --global user.name ""
 git clone https://github.com/IamHARSHDABAS/C
-git clone https://github.com/IamHARSHDABAS/click_counter
 git clone https://github.com/IamHARSHDABAS/ClickCounter
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
@@ -28,30 +28,7 @@ git clone https://github.com/IamHARSHDABAS/namer
 git clone https://github.com/IamHARSHDABAS/NeoVim
 git clone https://github.com/IamHARSHDABAS/shoot
 git clone https://github.com/IamHARSHDABAS/Sweetify
-git clone https://github.com/IamHARSHDABAS/ClickCounter
 
 # config
-mkdir Screenshot/
-mkdir Temp/
-mkdir .config/alacritty/
-mkdir .config/i3/
-mkdir .config/kitty/
-mkdir .config/nvim/
-cp -r DotFiles/Alacritty/alacritty.yml .config/alacritty/
-cp -r DotFiles/I3/config .config/i3/
-cp -r DotFiles/Kitty/kitty.conf .config/kitty/
-cp -r DotFiles/Bash/bashrc .bashrc
-cp -r NeoVim/* .config/nvim/
-
-# Aur helper
-git clone https://aur.archlinux.org/yay.git
-cd yay && makepkg -si
-
-# Aur
-yay android-studio
-yay visual-studio-code-bin
-yay google-chrome
-
-# Flutter
-flutter doctor --android-licenses
-sudo cp /usr/bin/google-chrome-stable /usr/bin/google-chrome
+cp -r DotFiles/Bash/bashrc ~/.bashrc
+cp -r NeoVim/* ~/.config/nvim/
