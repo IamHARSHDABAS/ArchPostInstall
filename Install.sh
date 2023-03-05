@@ -13,9 +13,6 @@ sudo npm install neovim
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
-# Flutter
-git clone https://github.com/flutter/Flutter -b stable
-
 # Dirs
 mkdir ~/.config/nvim/
 mkdir Repos
@@ -50,3 +47,8 @@ rm -rf paru
 paru android-studio
 paru visual-studio-code-bin
 paru tealdeer-git
+
+# Flutter
+cd ~
+git clone https://github.com/flutter/flutter.git -b stable ~/Flutter
+flutter doctor
