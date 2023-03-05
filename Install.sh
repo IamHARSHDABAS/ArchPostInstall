@@ -6,18 +6,21 @@ cd $HOME
 sudo pacman -S bluez bluez-utils firefox lsd neofetch neovim npm ripgrep spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd
 
 # NeoVim
+git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo npm install neovim
 
 # Bluetooth
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
+# Flutter
+git clone https://github.com/flutter/Flutter -b stable
+
 # Dirs
 mkdir ~/.config/nvim/
 mkdir Repos
 
 # Git
-git clone https://github.com/flutter/Flutter -b stable
 cd Repos
 git config --global user.email "iamharshdabas@gmail.com"
 git config --global user.name "IamHARSHDABAS"
