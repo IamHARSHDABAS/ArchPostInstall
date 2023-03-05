@@ -3,7 +3,7 @@
 cd $HOME
 
 # Install Packages
-sudo pacman -S bluez bluez-utils clang cmake firefox lsd neofetch neovim ninja npm ripgrep spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
+sudo pacman -S android-tools bluez bluez-utils clang cmake firefox lsd neofetch neovim ninja npm ripgrep scrcpy spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
 
 # NeoVim
 git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
