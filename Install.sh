@@ -17,9 +17,10 @@ mkdir ~/.config/nvim/
 mkdir Repos
 
 # Git
+git clone https://github.com/flutter/Flutter -b stable
 cd Repos
-#git config --global user.email ""
-#git config --global user.name ""
+git config --global user.email "iamharshdabas@gmail.com"
+git config --global user.name "IamHARSHDABAS"
 git clone https://github.com/IamHARSHDABAS/C
 git clone https://github.com/IamHARSHDABAS/ClickCounter
 git clone https://github.com/IamHARSHDABAS/DotFiles
