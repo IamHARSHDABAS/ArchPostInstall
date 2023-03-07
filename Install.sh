@@ -22,7 +22,7 @@ cd Repos
 git config --global user.email ""
 git config --global user.name ""
 git clone https://github.com/IamHARSHDABAS/C
-git clone https://github.com/IamHARSHDABAS/ClickCounter
+git clone https://github.com/IamHARSHDABAS/ClickCounterKotlin
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
 git clone https://github.com/IamHARSHDABAS/namer
