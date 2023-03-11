@@ -1,12 +1,11 @@
 #!/bin/bash
 
-cd $HOME
+cd ~
 
 # Install Packages
 sudo pacman -S android-tools bluez bluez-utils clang cmake firefox kdeconnect lsd neofetch neovim ninja npm ripgrep scrcpy spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
 
 # NeoVim
-git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo npm install neovim
 
 # Bluetooth
@@ -15,12 +14,12 @@ sudo systemctl start bluetooth
 
 # Dirs
 mkdir ~/.config/nvim/
-mkdir Repos
+mkdir ~/Repos
 
 # Git
 cd Repos
-git config --global user.email ""
-git config --global user.name ""
+# git config --global user.email ""
+# git config --global user.name ""
 git clone https://github.com/IamHARSHDABAS/C
 git clone https://github.com/IamHARSHDABAS/ClickCounter
 git clone https://github.com/IamHARSHDABAS/DotFiles
