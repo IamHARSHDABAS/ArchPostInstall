@@ -3,7 +3,7 @@
 cd ~
 
 # Install Packages
-sudo pacman -S android-tools bluez bluez-utils clang cmake firefox kdeconnect lsd neofetch neovim ninja npm ripgrep scrcpy spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd unzip zip
+sudo pacman -S bluez bluez-utils firefox kdeconnect lsd neofetch neovim npm ripgrep spectacle spotify-launcher telegram-desktop tree ttf-firacode-nerd
 
 # NeoVim
 sudo npm install neovim
@@ -20,14 +20,9 @@ mkdir ~/Repos
 cd Repos
 # git config --global user.email ""
 # git config --global user.name ""
-git clone https://github.com/IamHARSHDABAS/C
-git clone https://github.com/IamHARSHDABAS/ClickCounter
 git clone https://github.com/IamHARSHDABAS/DotFiles
 git clone https://github.com/IamHARSHDABAS/Java
-git clone https://github.com/IamHARSHDABAS/namer
 git clone https://github.com/IamHARSHDABAS/NeoVim
-git clone https://github.com/IamHARSHDABAS/shoot
-git clone https://github.com/IamHARSHDABAS/Sweetify
 
 # config
 cp -r DotFiles/Bash/bashrc ~/.bashrc
@@ -43,14 +38,5 @@ cd ..
 rm -rf paru
 
 # Aur
-paru android-studio
 paru visual-studio-code-bin
 paru tealdeer-git
-paru google-chrome
-
-# Flutter
-cd ~
-git clone https://github.com/flutter/flutter.git -b stable ~/Flutter
-flutter doctor --android-licenses
-sudo cp /usr/bin/google-chrome-stable /usr/bin/google-chrome
-flutter doctor
