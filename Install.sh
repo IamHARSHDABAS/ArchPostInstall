@@ -41,3 +41,4 @@ rm -rf paru
 # Aur
 paru visual-studio-code-bin
 paru tealdeer-git
+paru whatsapp-for-linux
